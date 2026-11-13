@@ -2,8 +2,6 @@
    Mine Muezzinoglu — personal website styles
    Palette (colorblind-friendly, from davidmathlogic.com/colorblind):
      teal  #40B0A6   sand  #E1BE6A   brown #994F00
-   Darker shades below are used for text so it stays readable.
-   To change a color everywhere, edit it once here.
    ========================================================= */
 
 :root {
@@ -23,7 +21,7 @@ body {
     margin: 0;
     background-color: var(--cream);
     color: var(--brown-dark);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.15rem;
     line-height: 1.65;
 }
@@ -46,7 +44,8 @@ body {
 }
 
 .nav .site-name {
-    color: var(--white);
+   font-family: 'Fraunces', serif; 
+   color: var(--white);
     font-size: 1.6rem;
     font-style: italic;
     text-decoration: none;
@@ -65,7 +64,7 @@ body {
     display: block;
     color: var(--white);
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Space Mono', monospace;
     font-size: 1rem;
     letter-spacing: 1px;
     padding: 6px 14px;
@@ -92,7 +91,8 @@ main {
 }
 
 h1, h2, h3 {
-    color: var(--brown);
+   font-family: 'Fraunces', serif; 
+   color: var(--brown);
     line-height: 1.25;
 }
 
@@ -103,7 +103,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Space Mono', monospace;
     letter-spacing: 2px;
     font-size: 1.5rem;
     margin-top: 2.2rem;
@@ -157,25 +157,6 @@ hr.divider {
 
 .intro .text p:first-child { margin-top: 0; }
 
-.news {
-    list-style: none;
-    padding: 0;
-}
-
-.news li {
-    padding: 10px 14px;
-    margin-bottom: 8px;
-    background-color: var(--white);
-    border-left: 5px solid var(--teal);
-    border-radius: 6px;
-}
-
-.news .date {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    color: var(--brown);
-    margin-right: 8px;
-}
 
 /* ---------- Projects page (click-to-open boxes) ---------- */
 details.project {
@@ -202,7 +183,7 @@ details.project summary::before {
     display: inline-block;
     width: 1.3em;
     color: var(--brown);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Space Mono', monospace;
 }
 
 details.project[open] summary::before { content: "–"; }
@@ -229,7 +210,7 @@ details.project .body {
 }
 
 .tags li {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Space Mono', monospace;
     font-size: 0.85rem;
     background-color: var(--sand-light);
     color: var(--brown-dark);
@@ -247,7 +228,7 @@ details.project .body {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 24px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Space Mono', monospace;
     letter-spacing: 1px;
 }
 
@@ -275,7 +256,7 @@ details.project .body {
 .contact-list .label {
     display: inline-block;
     min-width: 150px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Space Mono', monospace;
     color: var(--brown);
     font-weight: bold;
 }
@@ -297,4 +278,14 @@ footer a { color: var(--brown-dark); }
     h1 { font-size: 1.9rem; }
     .nav { justify-content: center; }
     .intro img { width: 220px; margin: 0 auto; }
+}
+
+/* Smaller pronunciation note next to the name */
+.pronounce {
+   font-family: 'Nunito', sans-serif; 
+   font-size: 1.1rem;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--brown-dark);
+    white-space: nowrap;
 }
